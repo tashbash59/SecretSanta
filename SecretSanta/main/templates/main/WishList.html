@@ -1,0 +1,46 @@
+{% load static %}}
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css" href="{% static './css/tailwind.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static './css/common.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static './css/fonts.css' %}" />
+    <link rel="stylesheet" type="text/css" href="{% static './css/WishList.css' %}" />
+
+
+
+
+
+</head>
+
+<body class="flex-column">
+
+    <section class="wish-list flex flex-col overflow-hidden bg-white">
+        <!-- Wishlist management section -->
+        <div class="mx-auto mb-27.5 mt-28.5 flex w-175 max-w-85% flex-col rounded-[30px] bg-[rgba(102,146,100,0.901)] xs:relative xs:mx-auto xs:my-20 tn:mx-auto tn:my-12.5">
+            <div class="mx-auto mb-15.5 mt-17.75 flex w-137.25 max-w-85% flex-col tn:relative tn:mx-auto tn:my-12.5">
+                <p class="mr-2 font-Inter text-12.5 font-normal leading-[1.22] -tracking-0.4 text-white md:items-start md:text-[46px] xxs:text-[36px]">Список моих желаний</p>
+                <div id="inputs-container" class="mx-auto mb-15.5 mt-17.75 flex w-137.25 max-w-85% flex-col tn:relative tn:mx-auto tn:my-12.5">
+                    <input class="ml-2.75 mt-13.75 min-h-19.5 rounded-[30px] bg-[rgb(217,217,217)] tn:relative tn:mb-0 tn:ml-2 tn:mr-0 tn:mt-12.5" id="default-input" placeholder="введите желание">
+                </div>
+                <button class="mx-auto mt-6.5 flex w-17 max-w-85% flex-col rounded-[20px] bg-[rgb(217,217,217)]" onclick="addInput()"><span class="mx-6 my-4 flex justify-center text-center font-Inter text-7.5 font-normal leading-[1.2] text-black md:items-start md:text-[28px] xs:relative xs:m-4 xxs:text-[24px] tn:mx-2 tn:my-4">+</span></button>
+                <div class="mx-auto mt-90.25 flex w-62.25 max-w-85% flex-col rounded-[30px] bg-[rgb(217,217,217)] md:relative md:mx-auto md:mb-0 md:mt-37.5 xs:mx-auto xs:mb-0 xs:mt-20 tn:mx-auto tn:mb-0 tn:mt-12.5">
+                    <a class="mb-3.75 ml-auto mt-2.75 w-[200.984375px] max-w-85% font-Inter text-10 font-normal leading-[1.2] text-black md:items-start md:text-[36px] xxs:text-[32px]" href="#">создать</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="{% static 'scripts/WishList.js' %}"></script>
+</body>
+
+</html>

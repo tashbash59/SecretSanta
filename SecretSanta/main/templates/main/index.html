@@ -1,0 +1,45 @@
+{% load static %}
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+    <meta charset="utf-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" type="text/css" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous" />
+
+    <!-- Please DO NOT remove this line, all link and script tags will be merged to here -->
+
+    <link rel="stylesheet" type="text/css" href="/css/tailwind.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/common.css" />
+
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+
+    <link rel="stylesheet" type="text/css" href="{% static '/css/index.scss' %}" />
+
+  </head>
+
+  <body class="flex-column">
+
+    <section class="main-page flex flex-col overflow-hidden bg-white">
+      <!-- Wish List Management Section --> 
+      <div class="mx-auto mb-27.5 mt-28.5 flex w-175 max-w-85% flex-col rounded-[30px] bg-[rgba(102,146,100,0.901)] xs:relative xs:mx-auto xs:my-20 tn:mx-auto tn:my-12.5">
+        <div class="mx-auto mb-15.5 mt-17.75 flex w-137.25 max-w-85% flex-col items-center gap-y-93.5 md:gap-y-37.5 xs:gap-y-20 tn:relative tn:mx-auto tn:my-12.5 tn:gap-y-12.5">
+          <div class="flex w-full flex-col">
+            <p class="mr-px font-Inter text-12.5 font-normal leading-[1.22] text-white md:items-start md:text-[46px] xxs:text-[36px]">Список моих желаний</p>
+            <div class="ml-2.75 mt-13.75 min-h-19.5 rounded-[30px] bg-[rgb(217,217,217)] tn:relative tn:mb-0 tn:ml-2 tn:mr-0 tn:mt-12.5"></div>
+            <div class="mx-auto mt-8.75 min-h-11.5 w-11.5 max-w-85% rounded-[20px] bg-[rgb(217,217,217)]"></div>
+          </div>
+          <div class="flex w-[249.015625px] max-w-85% flex-col rounded-[30px] bg-[rgb(217,217,217)]"><button class="mb-3.75 ml-auto mt-2.75 w-[80.72%] font-Inter text-10 font-normal leading-[1.2] text-black">создать</button></div>
+        </div>
+      </div>
+    </section>
+
+
+  </body>
+
+</html>
